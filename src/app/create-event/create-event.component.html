@@ -1,0 +1,801 @@
+<div class="mt-5 page-header">
+  <div class="mt-5 container">
+    <ngb-tabset type="pills" class="nav nav-pills nav-pills-primary vertical-pills" [orientation]="'vertical'">
+      <ngb-tab title="Datos de perfil">
+        <ng-template style="width:80%" ngbTabContent class="tab-space">
+          <div class="ml-auto mr-auto">
+
+            <form role="form" id="contact-form" method="post">
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Foto de perfil</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div id="file-uploader">
+                      <div class="container">
+                        <div class="row">
+                          <h4><small>No olvides una sonrisa siempre es la mejor manera de presentarse</small></h4>
+                          <app-image-upload :isRound = true></app-image-upload>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Información personal</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>Para que tus futuros invitados descubrán más cosas sobre ti, cuéntales lo que te gusta :
+                      tu plato favorito, el viaje de tus sueños...</small></h4>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <label>Nombre</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nombre..." (focus)="focus=true"
+                          (blur)="focus=false">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Apellido</label>
+                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                          </div>
+                          <input type="text" placeholder="Apellido..." class="form-control" (focus)="focus1=true"
+                            (blur)="focus1=false">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Correo electrónico</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus2===true}">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"></i></span>
+                        </div>
+                        <input type="email" placeholder="Correo electrónico..." class="form-control"
+                          (focus)="focus2=true" (blur)="focus2=false">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>Descripción</label>
+                      <textarea name="message" class="form-control" id="message" rows="6"></textarea>
+                    </div>
+                  </div>
+
+                  <!-- <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox">
+                          <span class="form-check-sign"></span>
+                          I'm not a robot
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <button type="submit" class="btn btn-primary btn-round pull-right">Send Message</button>
+                    </div>
+                  </div> -->
+                </div>
+
+
+              </div>
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Dirección</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>Rellena tu dirección completa para que tus experiencias aparezcan en los resultados de
+                      búsqueda. Solo tus invitados conocerán tu dirección exacta y no aparecerá en la web.</small></h4>
+
+                  <div class="col-md-12">
+                    <label>Dirección de domicilio completa</label>
+                    <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Dirección..." (focus)="focus=true"
+                        (blur)="focus=false">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+
+                      <div class="form-group">
+                        <label>Número</label>
+                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                          </div>
+                          <input type="text" placeholder="Número..." class="form-control" (focus)="focus1=true"
+                            (blur)="focus1=false">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-md-6">
+
+                      <div class="form-group">
+                        <label>Calle</label>
+                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                          </div>
+                          <input type="text" placeholder="Calle..." class="form-control" (focus)="focus1=true"
+                            (blur)="focus1=false">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+
+                      <div class="form-group">
+                        <label>Ciudad</label>
+                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                          </div>
+                          <input type="text" placeholder="Ciudad..." class="form-control" (focus)="focus1=true"
+                            (blur)="focus1=false">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-md-6">
+
+                      <div class="form-group">
+                        <label>Departamento</label>
+                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                          </div>
+                          <input type="text" placeholder="Departamento..." class="form-control" (focus)="focus1=true"
+                            (blur)="focus1=false">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="row">
+
+                  <div class="col-md-6">
+
+                    <div class="form-group">
+                      <label>Provincia/Región</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                        </div>
+                        <input type="text" placeholder="Provincia/Región..." class="form-control" (focus)="focus1=true"
+                          (blur)="focus1=false">
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label>País</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                        </div>
+                        <input type="text" placeholder="País..." class="form-control" (focus)="focus1=true"
+                          (blur)="focus1=false">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-8">
+                  <div class="form-group">
+                    <label>Información adicional</label>
+                    <small>Puerta, piso, cómo llegar, etc</small>
+                    <textarea name="message" class="form-control" id="message" rows="6"></textarea>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Acerca de ti</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>¡A tus futuros invitados, les encantará saber más de ti! ¿Te encanta cocinar con productos
+                      frescos? ¿Siempre pones un poco de musica jazzy cuando tienes invitados? ¿Haces yoga todos los
+                      días?
+                      ¡Cuentales un poco más de ti!</small></h4>
+
+                  <div class="col-md-6">
+                    <label>Profesión o actividad</label>
+                    <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Chef, alpinista, superhéroe..."
+                        (focus)="focus=true" (blur)="focus=false">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <label>Idiomas hablados</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                        </div>
+                        <input type="text" placeholder="Apellido..." class="form-control" (focus)="focus1=true"
+                          (blur)="focus1=false">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Descríbete</label>
+                    <textarea
+                      placeholder="Para que tus invitados sepan más sobre ti, cuéntales lo que te gusta: tu plato favorito, el viaje de tus sueños"
+                      name="message" class="form-control" id="message" rows="6"></textarea>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Preferencias culinarias</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>Para dar una idea tus invitados de la experiencia que vas a compartir juntos, describe tus
+                      destinos favoritos, lo que te gusta cocinar, saborear y preparar.</small></h4>
+
+                  <div class="col-md-6">
+                    <label>Mi plato favorito es...</label>
+                    <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                      </div>
+                      <input type="text" class="form-control"
+                        placeholder="Ravioles, gnocchis, pizza, torta de chocolate..." (focus)="focus=true"
+                        (blur)="focus=false">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <label>Cocina favorita</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                        </div>
+                        <input type="text" placeholder="Apellido..." class="form-control" (focus)="focus1=true"
+                          (blur)="focus1=false">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Régimen alimenticio</label>
+                    <textarea placeholder="Escribe aquí si tienes alergia a algún alimento o lo que no comas"
+                      name="message" class="form-control" id="message" rows="6"></textarea>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-primary btn-round pull-right">Guardar</button>
+              </div>
+            </form>
+
+          </div>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Descripción">
+        <ng-template style="width:80%" ngbTabContent class="tab-space">
+          <div class="ml-auto mr-auto">
+            <form role="form" id="description-form" method="post">
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Detalles del menú</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>¡Hola! Este es el primer paso para crear tu evento! Ahora te toca compartir todos los
+                      detalles del evento con tus futuros invitados. Puedes mencionar los los ingredientes que emplearás
+                      o las bebidas que vas a ofrecer durante el evento. Recuerda: tu evento será publicado una vez que
+                      hayas completado los 4 pasos.</small></h4>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <label>Tipo de comida</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                        <div class="select select-large">
+                          <select id="typeFood" name="typeOfFood">
+                            <option value="Aperitivo">Aperitivo</option>
+                            <option value="Desayuno">Desayuno</option>
+                            <option value="Brunch">Brunch</option>
+                            <option value="Clasesdecocina">Clases de cocina</option>
+                            <option value="Cena">Cena</option>
+                            <option value="Paseoculinario">Paseo culinario</option>
+                            <option value="Almuerzo">Almuerzo</option>
+                            <option value="Degustación">Degustación</option>
+                            <option value="Horadelte">Hora del té</option>
+                            <option value="Picnic">Picnic</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label>Tipo de cocina</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                        <div class="select select-large">
+                          <select id="typeKitchen" name="typeOfKitchen">
+                            <option value="Alemana">Alemana</option>
+                            <option value="Africana">Desayuno</option>
+                            <option value="Americana">Brunch</option>
+                            <option value="Antigua">Clases de cocina</option>
+                            <option value="Asiatica">Cena</option>
+                            <option value="Barbacoa">Paseo culinario</option>
+                            <option value="Belga">Almuerzo</option>
+                            <option value="Cajun">Degustación</option>
+                            <option value="Catalana">Hora del té</option>
+                            <option value="Chilena">Picnic</option>
+                            <option value="China">Almuerzo</option>
+                            <option value="Criolla">Degustación</option>
+                            <option value="Escandinava">Almuerzo</option>
+                            <option value="Española">Degustación</option>
+                            <option value="Europea">Almuerzo</option>
+                            <option value="Filipina">Degustación</option>
+                            <option value="Francesa">Almuerzo</option>
+                            <option value="Fusión">Degustación</option>
+                            <option value="Griega">Almuerzo</option>
+                            <option value="Hawaiana">Degustación</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label>Mín. de invitados</label>
+                      <div class="select select-large">
+                        <select id="minGuests" name="minGuests">
+                          <option value="1">1 Persona</option>
+                          <option value="2">2 Personas</option>
+                          <option value="3">3 Personas</option>
+                          <option value="4">4 Personas</option>
+                          <option value="5">5 Personas</option>
+                          <option value="6">6 Personas</option>
+                          <option value="7">7 Personas</option>
+                          <option value="8">8 Personas</option>
+                          <option value="9">9 Personas</option>
+                          <option value="10">10 Personas</option>
+                          <option value="11">11 Personas</option>
+                          <option value="12">12 Personas</option>
+                          <option value="13">13 Personas</option>
+                          <option value="14">14 Personas</option>
+                          <option value="15">15 Personas</option>
+                          <option value="16">16+ Personas</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <label>Máx. de invitados</label>
+                      <div class="select select-large">
+                        <select id="maxGuests" name="maxGuests">
+                          <option value="1">1 Persona</option>
+                          <option value="2">2 Personas</option>
+                          <option value="3">3 Personas</option>
+                          <option value="4">4 Personas</option>
+                          <option value="5">5 Personas</option>
+                          <option value="6">6 Personas</option>
+                          <option value="7">7 Personas</option>
+                          <option value="8">8 Personas</option>
+                          <option value="9">9 Personas</option>
+                          <option value="10">10 Personas</option>
+                          <option value="11">11 Personas</option>
+                          <option value="12">12 Personas</option>
+                          <option value="13">13 Personas</option>
+                          <option value="14">14 Personas</option>
+                          <option value="15">15 Personas</option>
+                          <option value="16">16+ Personas</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Dirección</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>Rellena tu dirección completa para que tus experiencias aparezcan en los resultados de
+                      búsqueda. Solo tus invitados conocerán tu dirección exacta y no aparecerá en la web.</small></h4>
+
+                  <div class="col-md-12">
+                    <label>Dirección de domicilio completa</label>
+                    <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Dirección..." (focus)="focus=true"
+                        (blur)="focus=false">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+
+                      <div class="form-group">
+                        <label>Número</label>
+                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                          </div>
+                          <input type="text" placeholder="Número..." class="form-control" (focus)="focus1=true"
+                            (blur)="focus1=false">
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-md-6">
+
+                      <div class="form-group">
+                        <label>Calle</label>
+                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                          </div>
+                          <input type="text" placeholder="Calle..." class="form-control" (focus)="focus1=true"
+                            (blur)="focus1=false">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+
+                <div class="col-md-8">
+                  <div class="form-group">
+                    <label>Información adicional</label>
+                    <small>Puerta, piso, cómo llegar, etc</small>
+                    <textarea name="message" class="form-control" id="message" rows="6"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Acerca de ti</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>¡A tus futuros invitados, les encantará saber más de ti! ¿Te encanta cocinar con productos
+                      frescos? ¿Siempre pones un poco de musica jazzy cuando tienes invitados? ¿Haces yoga todos los
+                      días?
+                      ¡Cuentales un poco más de ti!</small></h4>
+
+                  <div class="col-md-6">
+                    <label>Profesión o actividad</label>
+                    <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Chef, alpinista, superhéroe..."
+                        (focus)="focus=true" (blur)="focus=false">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <label>Idiomas hablados</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                        </div>
+                        <input type="text" placeholder="Apellido..." class="form-control" (focus)="focus1=true"
+                          (blur)="focus1=false">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Descríbete</label>
+                    <textarea
+                      placeholder="Para que tus invitados sepan más sobre ti, cuéntales lo que te gusta: tu plato favorito, el viaje de tus sueños"
+                      name="message" class="form-control" id="message" rows="6"></textarea>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Preferencias culinarias</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>Para dar una idea tus invitados de la experiencia que vas a compartir juntos, describe tus
+                      destinos favoritos, lo que te gusta cocinar, saborear y preparar.</small></h4>
+
+                  <div class="col-md-6">
+                    <label>Mi plato favorito es...</label>
+                    <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                      </div>
+                      <input type="text" class="form-control"
+                        placeholder="Ravioles, gnocchis, pizza, torta de chocolate..." (focus)="focus=true"
+                        (blur)="focus=false">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-6">
+                      <label>Cocina favorita</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                        </div>
+                        <input type="text" placeholder="Apellido..." class="form-control" (focus)="focus1=true"
+                          (blur)="focus1=false">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Régimen alimenticio</label>
+                    <textarea placeholder="Escribe aquí si tienes alergia a algún alimento o lo que no comas"
+                      name="message" class="form-control" id="message" rows="6"></textarea>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-primary btn-round pull-right">Guardar y continuar</button>
+              </div>
+            </form>
+
+          </div>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Fotos">
+        <ng-template style="width:80%" ngbTabContent class="tab-space">
+          <div class="ml-auto mr-auto">
+            <form role="form" id="description-form" method="post">
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Añade fotos a tu experiencia</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>Estas imágenes aparecerán en la parte superior de tu experiencia y será lo primero que
+                      verán tus huéspedes. Asegúrate de que destaquen y muestren cómo mola tu experiencia.</small></h4>
+
+                </div>
+
+
+              </div>
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Foto de portada</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>Usa la mejor imagen como foto de portada. Aparecerá en la página de búsqueda y será la
+                      primera foto de tu experiencia, por lo que debes asegurarte de que represente correctamente tu
+                      evento.</small></h4>
+                  <div class="row">
+                    <div id="file-uploader">
+                      <div class="container">
+                        <div class="row">
+                          <app-image-upload></app-image-upload>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Fotos de comida</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>¡Nos encanta ver tu increíble comida! Te recomendamos subir imágenes en alta definición un
+                      mínimo de tres platos que tus huéspedes probarán en tu evento. Sé creativo y juega con la
+                      perspectiva, el zoom y la puesta en escena.</small></h4>
+                  <div class="row">
+                    <div id="file-uploader">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <app-image-upload></app-image-upload>
+                          </div>
+                          <div class="col-md-4">
+                            <app-image-upload></app-image-upload>
+                          </div>
+                          <div class="col-md-4">
+                            <app-image-upload></app-image-upload>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="form-group">
+                  <div class="col-md-6">
+                    <label>Idiomas hablados</label>
+                    <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                      </div>
+                      <input type="text" placeholder="Apellido..." class="form-control" (focus)="focus1=true"
+                        (blur)="focus1=false">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Descríbete</label>
+                  <textarea
+                    placeholder="Para que tus invitados sepan más sobre ti, cuéntales lo que te gusta: tu plato favorito, el viaje de tus sueños"
+                    name="message" class="form-control" id="message" rows="6"></textarea>
+                </div>
+              </div>
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Imágenes del espacio</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>¡Muéstranos dónde recibes a tus huéspedes! Haz un tour virtual por tu espacio - intenta
+                      incluir imágenes de otros huéspedes y de la mesa.</small></h4>
+                  <div class="row">
+                    <div id="file-uploader">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <app-image-upload></app-image-upload>
+                          </div>
+                          <div class="col-md-4">
+                            <app-image-upload></app-image-upload>
+                          </div>
+                          <div class="col-md-4">
+                            <app-image-upload></app-image-upload>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">Fotos de anfitriones y ambiente</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>Por último pero no menos importante, ¡queremos verte! Sube una foto tuya, así como imágenes
+                      de las experiencias que ya has organizado, para que los huéspedes sepan qué esperar de tu
+                      experiencia.</small></h4>
+                  <div class="row">
+                    <div id="file-uploader">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <app-image-upload></app-image-upload>
+                          </div>
+                          <div class="col-md-4">
+                            <app-image-upload></app-image-upload>
+                          </div>
+                          <div class="col-md-4">
+                            <app-image-upload></app-image-upload>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-primary btn-round pull-right">Continuar</button>
+              </div>
+            </form>
+          </div>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="Lugar y servicios">
+        <ng-template style="width:80%" ngbTabContent class="tab-space">
+          <div class="ml-auto mr-auto">
+            <form role="form" id="description-form" method="post">
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">A qué hora realizarás el evento?</h4>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <label>Desde</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                        <div class="select select-large">
+                          <select id="hourEvent" name="hourEvent">
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-5">
+                      <label>Hasta:</label>
+                      <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                        <div class="select select-large">
+                          <select id="hourFinEvent" name="hourFinEvent">
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="card card-contact card-raised">
+                <div class="card-header text-center">
+                  <h4 class="card-title">¿Dónde vas a realizar este evento?</h4>
+                </div>
+                <div class="card-body">
+                  <h4><small>Rellena tu dirección completa para que tus experiencias aparezcan en los resultados de
+                      búsqueda. Solo tus invitados conocerán tu dirección exacta y no aparecerá en la web.</small></h4>
+
+                  <div class="col-md-12">
+                    <label>Dirección completa</label>
+                    <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Dirección..." (focus)="focus=true"
+                        (blur)="focus=false">
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+
+              <div class="col-md-6">
+                <button type="submit" class="btn btn-primary btn-round pull-right">Enviar para revisión</button>
+              </div>
+            </form>
+
+          </div>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
+</div>

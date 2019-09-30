@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg bg-white fixed-top" color-on-scroll="500">
+    <div class="container">
+        <div class="navbar-translate">
+            <a class="navbar-brand" [routerLink]="['/presentation']" placement="bottom">
+                <img style="max-width:25%;" src="../../../assets/img/logo-color.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+                (click)="sidebarToggle()">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" data-nav-image="assets/img/blurred-image-1.jpg" data-color="red">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="dropdown-item" [routerLink]="['/login']"><i
+                            class="now-ui-icons shopping_box"></i> Ingresar</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="dropdown-item" [routerLink]="['/register']"><i
+                            class="now-ui-icons ui-2_settings-90"></i> Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="dropdown-item" [routerLink]="['/create-event']"><i
+                            class="now-ui-icons text_align-left"></i> Crear evento</a>
+                </li>
+                <!-- <a ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle" ngbDropdownToggle>
+                        <i class="now-ui-icons files_paper" aria-hidden="true"></i>
+                        <p></p>
+                    </div>
+                    <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" [routerLink]="['/login']"><i
+                                class="now-ui-icons shopping_box"></i> Ingresar</a>
+                        <a class="dropdown-item" [routerLink]="['/register']"><i
+                                class="now-ui-icons ui-2_settings-90"></i> Registrarse</a>
+                        <a class="dropdown-item" [routerLink]="['/create-event']"><i
+                                class="now-ui-icons text_align-left"></i> Crear evento</a>
+                    </div>
+                </a> -->
+                <!-- <a ngbDropdown class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle" ngbDropdownToggle>
+                      <i class="now-ui-icons design_image" aria-hidden="true"></i>
+                      <p>Examples</p>
+                    </div>
+                    <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" [routerLink]="['/examples/aboutus']"><i class="now-ui-icons business_bulb-63"></i> About-us</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/blogpost']"><i class="now-ui-icons text_align-left"></i> Blog Post</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/blogposts']"><i class="now-ui-icons design_bullet-list-67"></i> Blog Posts</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/contactus']"><i class="now-ui-icons location_pin"></i> Contact Us</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/landing']"><i class="now-ui-icons education_paper"></i> Landing Page</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/login']">  <i class="now-ui-icons users_circle-08"></i> Login Page</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/pricing']"><i class="now-ui-icons business_money-coins"></i>&nbsp; Pricing</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/ecommerce']">  <i class="now-ui-icons shopping_shop"></i> Ecommerce Page</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/productpage']"><i class="now-ui-icons shopping_bag-16"></i> Product Page</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/profile']"><i class="now-ui-icons users_single-02"></i> Profile Page</a>
+                        <a class="dropdown-item" [routerLink]="['/examples/register']"><i class="now-ui-icons tech_mobile"></i> Signup Page</a>
+                    </div>
+                </a> -->
+                <!-- <li class="nav-item">
+                    <a class="nav-link btn btn-primary" href="https://www.creative-tim.com/product/now-ui-kit-pro-angular">
+                       <p>Buy now</p>
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
