@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { SectionsModule } from './sections/sections.module';
 import { ComponentsModule } from './components/components.module';
-import { ExamplesModule } from './examples/examples.module';
+// import { ExamplesModule } from './examples/examples.module';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 // import {LoginComponent} from './examples/login/login.component';
@@ -49,7 +49,7 @@ import { ImageUploadModule } from './shared/image-upload/image-upload.module';
         PresentationModule,
         SectionsModule,
         ComponentsModule,
-        ExamplesModule,
+        // ExamplesModule,
         ReactiveFormsModule,
         HttpClientModule,
         ImageUploadModule
