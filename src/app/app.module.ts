@@ -22,8 +22,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 
 import { PresentationModule } from './presentation/presentation.module';
 
-// import { LoginComponent } from './login/login.component';
-// import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import { environment } from '../environments/environment';
 import { CreateEventComponent } from './create-event/create-event.component';
 import { ImageUploadModule } from './shared/image-upload/image-upload.module';
@@ -31,8 +31,8 @@ import { ImageUploadModule } from './shared/image-upload/image-upload.module';
     declarations: [
         AppComponent,
         NavbarComponent,
-        // LoginComponent,
-        // RegisterComponent,
+        LoginComponent,
+        RegisterComponent,
         CreateEventComponent,
         // LoginComponent,
         // RegisterComponent

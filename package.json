@@ -45,9 +45,7 @@
     "rellax": "1.7.1",
     "rxjs": "6.4.0",
     "rxjs-compat": "6.4.0",
-    "zone.js": "0.8.29",
-    "@angular/cli": "7.3.5",
-    "@angular/compiler-cli": "7.2.8"
+    "zone.js": "0.8.29"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.13.5",
@@ -66,7 +64,9 @@
     "protractor": "5.4.2",
     "ts-node": "8.0.3",
     "tslint": "5.13.1",
-    "typescript": "3.1.6"
+    "typescript": "3.1.6",
+    "@angular/cli": "7.3.5",
+    "@angular/compiler-cli": "7.2.8"
   },
   "engines": {
     "node": "12.7.0",
