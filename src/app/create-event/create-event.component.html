@@ -101,16 +101,22 @@
                   <h4><small>Rellena tu dirección completa para que tus experiencias aparezcan en los resultados de
                       búsqueda. Solo tus invitados conocerán tu dirección exacta y no aparecerá en la web.</small></h4>
 
-                  <div class="col-md-12">
-                    <label>Dirección de domicilio completa</label>
-                    <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                      <div class="col-md-12">
+                        <label>Dirección de domicilio completa</label>
+                        <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Dirección..." (focus)="focus=true"
+                            (blur)="focus=false" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
+                        </div>
                       </div>
-                      <input type="text" class="form-control" placeholder="Dirección..." (focus)="focus=true"
-                        (blur)="focus=false">
-                    </div>
-                  </div>
+                      
+                      <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+                        <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"
+                          (dragEnd)="markerDragEnd($event)"></agm-marker>
+                      </agm-map>
+                  
 
                   <div class="row">
                     <div class="col-md-6">

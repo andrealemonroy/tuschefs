@@ -27,6 +27,9 @@ import { RegisterComponent } from './register/register.component';
 import { environment } from '../environments/environment';
 import { CreateEventComponent } from './create-event/create-event.component';
 import { ImageUploadModule } from './shared/image-upload/image-upload.module';
+
+import { AgmCoreModule } from '@agm/core';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -52,7 +55,11 @@ import { ImageUploadModule } from './shared/image-upload/image-upload.module';
         // ExamplesModule,
         ReactiveFormsModule,
         HttpClientModule,
-        ImageUploadModule
+        ImageUploadModule,
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyAD_TNm6k3RQOkPz7_XbJci8PFNnqmV6Mg',
+            libraries: ['places']
+          })
     ],
     providers: [],
     bootstrap: [AppComponent]

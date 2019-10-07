@@ -10,7 +10,6 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    debugger;
   }
   loginUser(event) {
     event.preventDefault()
