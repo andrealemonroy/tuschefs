@@ -1,0 +1,16 @@
+Looking for git in: /usr/bin/git
+Using git 2.20.1 (Apple Git-117) from /usr/bin/git
+> git rev-parse --show-toplevel
+> git rev-parse --git-dir
+> git config --get commit.template
+Open repository: /Users/andreamonroy/Documents/extra/tuschefs
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+fatal: no upstream configured for branch 'master'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -v -z --stdin
+> git show :src/app/event-description/event-description.component.html
+> git ls-files --stage -- src/app/event-description/

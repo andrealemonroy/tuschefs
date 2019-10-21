@@ -15,7 +15,7 @@
                     <div id="file-uploader">
                       <div class="container">
                         <div class="row">
-                          <h4><small>No olvides una sonrisa siempre es la mejor manera de presentarse</small></h4>
+                          <!-- <h4><small>No olvides una sonrisa siempre es la mejor manera de presentarse</small></h4> -->
                           <app-image-upload :isRound = true></app-image-upload>
                         </div>
                       </div>
@@ -93,137 +93,11 @@
 
 
               </div>
-              <div class="card card-contact card-raised">
-                <div class="card-header text-center">
-                  <h4 class="card-title">Dirección</h4>
-                </div>
-                <div class="card-body">
-                  <h4><small>Rellena tu dirección completa para que tus experiencias aparezcan en los resultados de
-                      búsqueda. Solo tus invitados conocerán tu dirección exacta y no aparecerá en la web.</small></h4>
-
-                      <div class="col-md-12">
-                        <label>Dirección de domicilio completa</label>
-                        <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
-                          </div>
-                          <input type="text" class="form-control" placeholder="Dirección..." (focus)="focus=true"
-                            (blur)="focus=false" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
-                        </div>
-                      </div>
-                      
-                      <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
-                        <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"
-                          (dragEnd)="markerDragEnd($event)"></agm-marker>
-                      </agm-map>
-                  
-
-                  <div class="row">
-                    <div class="col-md-6">
-
-                      <div class="form-group">
-                        <label>Número</label>
-                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
-                          </div>
-                          <input type="text" placeholder="Número..." class="form-control" (focus)="focus1=true"
-                            (blur)="focus1=false">
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="col-md-6">
-
-                      <div class="form-group">
-                        <label>Calle</label>
-                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
-                          </div>
-                          <input type="text" placeholder="Calle..." class="form-control" (focus)="focus1=true"
-                            (blur)="focus1=false">
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6">
-
-                      <div class="form-group">
-                        <label>Ciudad</label>
-                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
-                          </div>
-                          <input type="text" placeholder="Ciudad..." class="form-control" (focus)="focus1=true"
-                            (blur)="focus1=false">
-                        </div>
-                      </div>
-
-                    </div>
-                    <div class="col-md-6">
-
-                      <div class="form-group">
-                        <label>Departamento</label>
-                        <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
-                          </div>
-                          <input type="text" placeholder="Departamento..." class="form-control" (focus)="focus1=true"
-                            (blur)="focus1=false">
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                </div>
-                <div class="row">
-
-                  <div class="col-md-6">
-
-                    <div class="form-group">
-                      <label>Provincia/Región</label>
-                      <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
-                        </div>
-                        <input type="text" placeholder="Provincia/Región..." class="form-control" (focus)="focus1=true"
-                          (blur)="focus1=false">
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>País</label>
-                      <div class="input-group" [ngClass]="{'input-group-focus':focus1===true}">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
-                        </div>
-                        <input type="text" placeholder="País..." class="form-control" (focus)="focus1=true"
-                          (blur)="focus1=false">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-8">
-                  <div class="form-group">
-                    <label>Información adicional</label>
-                    <small>Puerta, piso, cómo llegar, etc</small>
-                    <textarea name="message" class="form-control" id="message" rows="6"></textarea>
-                  </div>
-                </div>
-              </div>
+              
 
 
 
-
-              <div class="card card-contact card-raised">
+              <!-- <div class="card card-contact card-raised">
                 <div class="card-header text-center">
                   <h4 class="card-title">Acerca de ti</h4>
                 </div>
@@ -307,7 +181,7 @@
                 </div>
 
 
-              </div>
+              </div> -->
               <div class="col-md-6">
                 <button type="submit" class="btn btn-primary btn-round pull-right">Guardar</button>
               </div>
@@ -432,7 +306,7 @@
 
 
               </div>
-              <div class="card card-contact card-raised">
+              <!-- <div class="card card-contact card-raised">
                 <div class="card-header text-center">
                   <h4 class="card-title">Dirección</h4>
                 </div>
@@ -451,7 +325,7 @@
                     </div>
                   </div>
 
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col-md-6">
 
                       <div class="form-group">
@@ -480,11 +354,11 @@
                       </div>
 
                     </div>
-                  </div>
+                  </div> -->
 
 
 
-                </div>
+                <!-- </div>
 
 
                 <div class="col-md-8">
@@ -494,8 +368,8 @@
                     <textarea name="message" class="form-control" id="message" rows="6"></textarea>
                   </div>
                 </div>
-              </div>
-              <div class="card card-contact card-raised">
+              </div>  -->
+              <!-- <div class="card card-contact card-raised">
                 <div class="card-header text-center">
                   <h4 class="card-title">Acerca de ti</h4>
                 </div>
@@ -578,7 +452,7 @@
                 </div>
 
 
-              </div>
+              </div> -->
               <div class="col-md-6">
                 <button type="submit" class="btn btn-primary btn-round pull-right">Guardar y continuar</button>
               </div>
@@ -623,7 +497,7 @@
                 </div>
 
               </div>
-              <div class="card card-contact card-raised">
+              <!-- <div class="card card-contact card-raised">
                 <div class="card-header text-center">
                   <h4 class="card-title">Fotos de comida</h4>
                 </div>
@@ -669,8 +543,8 @@
                     placeholder="Para que tus invitados sepan más sobre ti, cuéntales lo que te gusta: tu plato favorito, el viaje de tus sueños"
                     name="message" class="form-control" id="message" rows="6"></textarea>
                 </div>
-              </div>
-              <div class="card card-contact card-raised">
+              </div> -->
+              <!-- <div class="card card-contact card-raised">
                 <div class="card-header text-center">
                   <h4 class="card-title">Imágenes del espacio</h4>
                 </div>
@@ -697,8 +571,8 @@
 
                 </div>
 
-              </div>
-              <div class="card card-contact card-raised">
+              </div> -->
+              <!-- <div class="card card-contact card-raised">
                 <div class="card-header text-center">
                   <h4 class="card-title">Fotos de anfitriones y ambiente</h4>
                 </div>
@@ -726,7 +600,7 @@
 
                 </div>
 
-              </div>
+              </div> -->
               <div class="col-md-6">
                 <button type="submit" class="btn btn-primary btn-round pull-right">Continuar</button>
               </div>
@@ -770,7 +644,7 @@
 
 
               </div>
-              <div class="card card-contact card-raised">
+              <!-- <div class="card card-contact card-raised">
                 <div class="card-header text-center">
                   <h4 class="card-title">¿Dónde vas a realizar este evento?</h4>
                 </div>
@@ -792,7 +666,40 @@
 
                 </div>
 
-              </div>
+              </div> -->
+              <div class="card card-contact card-raised">
+                  <div class="card-header text-center">
+                    <h4 class="card-title">Dirección</h4>
+                  </div>
+                  <div class="card-body">
+                    <h4><small>Rellena tu dirección completa para que tus experiencias aparezcan en los resultados de
+                        búsqueda. Solo tus invitados conocerán tu dirección exacta y no aparecerá en la web.</small></h4>
+  
+                        <div class="col-md-12">
+                          <label>Dirección de domicilio completa</label>
+                          <div class="input-group" [ngClass]="{'input-group-focus':focus===true}">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="now-ui-icons users_circle-08"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Dirección..." (focus)="focus=true"
+                              (blur)="focus=false" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" #search>
+                          </div>
+                        </div>
+  
+                        <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom">
+                          <agm-marker [latitude]="latitude" [longitude]="longitude" [markerDraggable]="true"
+                            (dragEnd)="markerDragEnd($event)"></agm-marker>
+                        </agm-map>
+  
+  
+                    
+  
+                
+  
+                  </div>
+  
+                </div>
+  
 
               <div class="col-md-6">
                 <button type="submit" class="btn btn-primary btn-round pull-right">Enviar para revisión</button>

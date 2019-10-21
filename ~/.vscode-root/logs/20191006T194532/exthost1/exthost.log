@@ -1,0 +1,42 @@
+[2019-10-06 19:45:46.031] [exthost] [info] extension host started
+[2019-10-06 19:45:46.146] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:45:46.146] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/debug-auto-launch/dist/extension
+[2019-10-06 19:45:46.160] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:45:46.160] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/dist/extension
+[2019-10-06 19:45:46.645] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:45:46.645] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/main
+[2019-10-06 19:45:47.511] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:45:47.511] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/dist/extension
+[2019-10-06 19:45:47.546] [exthost] [info] ExtensionService#_doActivateExtension mhutchie.git-graph {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:45:47.546] [exthost] [info] ExtensionService#loadCommonJSModule /Users/andreamonroy/.vscode/extensions/mhutchie.git-graph-1.16.0/out/extension.js
+[2019-10-06 19:45:47.774] [exthost] [info] ExtensionService#_doActivateExtension peakchen90.vue-beautify {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:45:47.774] [exthost] [info] ExtensionService#loadCommonJSModule /Users/andreamonroy/.vscode/extensions/peakchen90.vue-beautify-2.0.4/extension
+[2019-10-06 19:45:47.842] [exthost] [info] eager extensions activated
+[2019-10-06 19:46:15.647] [exthost] [info] extension host started
+[2019-10-06 19:46:15.696] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:46:15.696] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/debug-auto-launch/dist/extension
+[2019-10-06 19:46:15.706] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:46:15.706] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/dist/extension
+[2019-10-06 19:46:15.761] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:46:15.761] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/main
+[2019-10-06 19:46:15.824] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:46:15.824] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/dist/extension
+[2019-10-06 19:46:15.832] [exthost] [info] ExtensionService#_doActivateExtension mhutchie.git-graph {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:46:15.832] [exthost] [info] ExtensionService#loadCommonJSModule /Users/andreamonroy/.vscode/extensions/mhutchie.git-graph-1.16.0/out/extension.js
+[2019-10-06 19:46:15.943] [exthost] [info] ExtensionService#_doActivateExtension peakchen90.vue-beautify {"startup":true,"activationEvent":"*"}
+[2019-10-06 19:46:15.943] [exthost] [info] ExtensionService#loadCommonJSModule /Users/andreamonroy/.vscode/extensions/peakchen90.vue-beautify-2.0.4/extension
+[2019-10-06 19:46:15.970] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"activationEvent":"workspaceContains:package.json"}
+[2019-10-06 19:46:15.970] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/npm/dist/main
+[2019-10-06 19:46:16.322] [exthost] [info] eager extensions activated
+[2019-10-06 19:46:20.702] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"activationEvent":"onLanguage:html"}
+[2019-10-06 19:46:20.703] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/html-language-features/client/dist/htmlMain
+[2019-10-06 19:51:50.649] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-10-06 19:51:50.650] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/configuration-editing/dist/extension
+[2019-10-06 19:51:50.694] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-10-06 19:51:50.694] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/json-language-features/client/dist/jsonMain
+[2019-10-06 19:51:51.115] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2019-10-06 19:51:51.115] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/typescript-language-features/dist/extension
+[2019-10-06 19:55:14.178] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features {"startup":false,"activationEvent":"onLanguage:css"}
+[2019-10-06 19:55:14.178] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/css-language-features/client/dist/cssMain
+[2019-10-06 19:55:14.287] [exthost] [info] ExtensionService#_doActivateExtension aeschli.vscode-css-formatter {"startup":false,"activationEvent":"onLanguage:css"}
+[2019-10-06 19:55:14.287] [exthost] [info] ExtensionService#loadCommonJSModule /Users/andreamonroy/.vscode/extensions/aeschli.vscode-css-formatter-1.0.1/out/extension

@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import * as Rellax from 'rellax';
 
-
 @Component({
     selector: 'app-presentation',
     templateUrl: './presentation.component.html',

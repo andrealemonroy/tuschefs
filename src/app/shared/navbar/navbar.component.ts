@@ -26,7 +26,7 @@ export class NavbarComponent implements OnInit {
         }, 500);
         html.classList.add('nav-open');
 
-        this.sidebarVisible = true;
+        this.sidebarVisible = false;
     };
     sidebarClose() {
         const html = document.getElementsByTagName('html')[0];

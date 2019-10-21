@@ -1,0 +1,6 @@
+[2019-10-07 23:47:21.862] Starting Git Graph ...
+[2019-10-07 23:47:21.901] Using /usr/bin/git (version: 2.20.1 (Apple Git-117))
+[2019-10-07 23:47:21.921] > git rev-parse --show-toplevel
+[2019-10-07 23:47:21.922] Started Git Graph - Ready to use!
+[2019-10-07 23:47:21.976] Searching workspace for new repos ...
+[2019-10-07 23:47:21.976] Completed searching workspace for new repos

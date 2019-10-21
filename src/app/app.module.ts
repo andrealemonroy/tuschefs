@@ -20,15 +20,18 @@ import { AppComponent } from './app.component';
 import { PresentationComponent } from './presentation/presentation.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 
-import { PresentationModule } from './presentation/presentation.module';
+// import { PresentationModule } from './presentation/presentation.module';
 
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { environment } from '../environments/environment';
 import { CreateEventComponent } from './create-event/create-event.component';
+import { EventDescriptionComponent } from './event-description/event-description.component';
+// import { NgbdModalBasic } from './modal/modal.component';
 import { ImageUploadModule } from './shared/image-upload/image-upload.module';
 
 import { AgmCoreModule } from '@agm/core';
+// import { AngularReactDatesModule } from 'angular-react-dates';
 
 @NgModule({
     declarations: [
@@ -37,8 +40,9 @@ import { AgmCoreModule } from '@agm/core';
         LoginComponent,
         RegisterComponent,
         CreateEventComponent,
-        // LoginComponent,
-        // RegisterComponent
+        EventDescriptionComponent,
+        // NgbdModalBasic,
+        PresentationComponent
     ],
     imports: [
         BrowserAnimationsModule,
@@ -49,13 +53,14 @@ import { AgmCoreModule } from '@agm/core';
         FormsModule,
         RouterModule,
         AppRoutingModule,
-        PresentationModule,
         SectionsModule,
         ComponentsModule,
         // ExamplesModule,
+
         ReactiveFormsModule,
         HttpClientModule,
         ImageUploadModule,
+        // AngularReactDatesModule.forRoot(),
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyAD_TNm6k3RQOkPz7_XbJci8PFNnqmV6Mg',
             libraries: ['places']

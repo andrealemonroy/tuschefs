@@ -1,0 +1,9 @@
+[2019-10-06 19:45:40.551] [sharedprocess] [info] main {"machineId":"2f140372b28e5845bcc71e7f7593ca563d0a49341c62f73a09c7619089075f6a"}
+[2019-10-06 19:45:51.133] [sharedprocess] [info] Deleted from disk octref.vetur /Users/andreamonroy/.vscode/extensions/octref.vetur-0.22.3
+[2019-10-06 19:46:20.327] [sharedprocess] [info] Starting to clean up unused language packs.
+[2019-10-07 23:47:24.540] [sharedprocess] [info] Installing extension: mhutchie.git-graph
+[2019-10-07 23:47:25.213] [sharedprocess] [info] Downloaded extension: mhutchie.git-graph /tmp/73f172e3-0f1a-4628-afab-f6ad1ef0d34f
+[2019-10-07 23:47:25.511] [sharedprocess] [info] Extracted extension to /Users/andreamonroy/.vscode/extensions/.mhutchie.git-graph-1.17.0: mhutchie.git-graph
+[2019-10-07 23:47:25.512] [sharedprocess] [info] Renamed to /Users/andreamonroy/.vscode/extensions/mhutchie.git-graph-1.17.0
+[2019-10-07 23:47:25.515] [sharedprocess] [info] Installation completed. mhutchie.git-graph
+[2019-10-07 23:47:25.556] [sharedprocess] [info] Extensions installed successfully: mhutchie.git-graph

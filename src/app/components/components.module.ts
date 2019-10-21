@@ -16,7 +16,7 @@ import { TypographyComponent } from './typography/typography.component';
 import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
 import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
-import { NgbdModalBasic } from './modal/modal.component';
+
 import { PrefooterAreasComponent } from './prefooter-areas/prefooter-areas.component';
 import { FootersAreasComponent } from './footers-areas/footers-areas.component';
 import { TablesAreasComponent } from './tables-areas/tables-areas.component';
@@ -43,7 +43,6 @@ import { CardsAreasComponent } from './cards-areas/cards-areas.component';
         TypographyComponent,
         NucleoiconsComponent,
         NotificationComponent,
-        NgbdModalBasic,
         PrefooterAreasComponent,
         FootersAreasComponent,
         TablesAreasComponent,

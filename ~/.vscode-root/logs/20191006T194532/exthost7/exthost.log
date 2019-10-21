@@ -1,0 +1,32 @@
+[2019-10-07 18:16:05.683] [exthost] [info] extension host started
+[2019-10-07 18:16:05.727] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-10-07 18:16:05.727] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/debug-auto-launch/dist/extension
+[2019-10-07 18:16:05.735] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-10-07 18:16:05.735] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/dist/extension
+[2019-10-07 18:16:05.767] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-10-07 18:16:05.767] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/main
+[2019-10-07 18:16:05.810] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-10-07 18:16:05.810] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/dist/extension
+[2019-10-07 18:16:05.818] [exthost] [info] ExtensionService#_doActivateExtension mhutchie.git-graph {"startup":true,"activationEvent":"*"}
+[2019-10-07 18:16:05.818] [exthost] [info] ExtensionService#loadCommonJSModule /Users/andreamonroy/.vscode/extensions/mhutchie.git-graph-1.16.0/out/extension.js
+[2019-10-07 18:16:05.895] [exthost] [info] ExtensionService#_doActivateExtension peakchen90.vue-beautify {"startup":true,"activationEvent":"*"}
+[2019-10-07 18:16:05.895] [exthost] [info] ExtensionService#loadCommonJSModule /Users/andreamonroy/.vscode/extensions/peakchen90.vue-beautify-2.0.4/extension
+[2019-10-07 18:16:05.934] [exthost] [info] eager extensions activated
+[2019-10-07 23:47:21.472] [exthost] [info] extension host started
+[2019-10-07 23:47:21.590] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"activationEvent":"onLanguage:html"}
+[2019-10-07 23:47:21.590] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/dist/extension
+[2019-10-07 23:47:21.614] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"activationEvent":"onLanguage:html"}
+[2019-10-07 23:47:21.614] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/html-language-features/client/dist/htmlMain
+[2019-10-07 23:47:21.652] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-10-07 23:47:21.652] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/debug-auto-launch/dist/extension
+[2019-10-07 23:47:21.656] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-10-07 23:47:21.656] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/git/dist/main
+[2019-10-07 23:47:21.692] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-10-07 23:47:21.692] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/dist/extension
+[2019-10-07 23:47:21.697] [exthost] [info] ExtensionService#_doActivateExtension mhutchie.git-graph {"startup":true,"activationEvent":"*"}
+[2019-10-07 23:47:21.697] [exthost] [info] ExtensionService#loadCommonJSModule /Users/andreamonroy/.vscode/extensions/mhutchie.git-graph-1.16.0/out/extension.js
+[2019-10-07 23:47:21.742] [exthost] [info] ExtensionService#_doActivateExtension peakchen90.vue-beautify {"startup":true,"activationEvent":"*"}
+[2019-10-07 23:47:21.742] [exthost] [info] ExtensionService#loadCommonJSModule /Users/andreamonroy/.vscode/extensions/peakchen90.vue-beautify-2.0.4/extension
+[2019-10-07 23:47:21.765] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":true,"activationEvent":"workspaceContains:package.json"}
+[2019-10-07 23:47:21.765] [exthost] [info] ExtensionService#loadCommonJSModule /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/npm/dist/main
+[2019-10-07 23:47:21.888] [exthost] [info] eager extensions activated

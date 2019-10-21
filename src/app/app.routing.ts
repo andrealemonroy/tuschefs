@@ -12,7 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 
-import { CreateEventComponent } from './create-event/create-event.component'
+import { CreateEventComponent } from './create-event/create-event.component';
+import {EventDescriptionComponent} from './event-description/event-description.component'
 const routes: Routes = [
     { path: '', redirectTo: 'presentation', pathMatch: 'full' },
     { path: 'presentation', component: PresentationComponent },
@@ -21,7 +22,8 @@ const routes: Routes = [
     { path: 'nucleoicons', component: NucleoiconsComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'create-event', component: CreateEventComponent }
+    { path: 'create-event', component: CreateEventComponent },
+    { path: 'event-description', component: EventDescriptionComponent}
 ];
 
 @NgModule({
