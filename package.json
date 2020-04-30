@@ -34,7 +34,7 @@
     "express": "^4.17.1",
     "firebase": "^6.6.1",
     "font-awesome": "4.7.0",
-    "jquery": "3.3.1",
+    "jquery": "3.5.0",
     "jw-bootstrap-switch-ng2": "2.0.5",
     "ng2-nouislider": "1.7.13",
     "ngx-chips": "2.0.0-beta.0",
