@@ -39,7 +39,7 @@
     "ng2-nouislider": "1.7.13",
     "ngx-chips": "2.0.0-beta.0",
     "ngx-gallery": "5.9.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "nouislider": "12.1.0",
     "path": "^0.12.7",
     "popper.js": "1.14.7",
